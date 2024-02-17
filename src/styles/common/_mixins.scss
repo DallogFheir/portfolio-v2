@@ -1,6 +1,15 @@
-@mixin flex-centered {
+@mixin _flex-base {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@mixin flex-column {
+  @include _flex-base;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  @include _flex-base;
+  flex-direction: row;
 }

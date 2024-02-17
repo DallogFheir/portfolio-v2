@@ -1,0 +1,19 @@
+@use "common/colors";
+@use "common/mixins";
+
+.accordeon {
+  width: 100%;
+  text-align: center;
+
+  &-header {
+    position: relative;
+    font-weight: 400;
+    background-color: colors.$color-background-section;
+
+    &-chevron {
+      position: absolute;
+      right: 1em;
+      cursor: pointer;
+    }
+  }
+}

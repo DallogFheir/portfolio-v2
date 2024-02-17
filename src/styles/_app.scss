@@ -1,7 +1,7 @@
 @use "common/mixins";
 
 header {
-  @include mixins.flex-centered;
+  @include mixins.flex-column;
 }
 
 main {
