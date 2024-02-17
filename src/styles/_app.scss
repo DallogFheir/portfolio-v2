@@ -1,9 +1,13 @@
 @use "common/mixins";
 
-header {
+.header {
   @include mixins.flex-column;
+  @include mixins.flex-centered;
+  font-size: 2.5rem;
+  flex-grow: 3;
 }
 
 main {
-  height: 100%;
+  @include mixins.flex-column;
+  flex-grow: 1;
 }

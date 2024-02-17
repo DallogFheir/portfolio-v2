@@ -2,18 +2,52 @@
 @use "common/mixins";
 
 .accordeon {
+  @include mixins.flex-column;
   width: 100%;
   text-align: center;
+  flex-grow: 1;
 
   &-header {
+    @include mixins.flex-column;
+    @include mixins.flex-centered;
     position: relative;
+    font-size: 2em;
     font-weight: 400;
     background-color: colors.$color-background-section;
+    flex-grow: 1;
+    cursor: pointer;
 
     &-chevron {
       position: absolute;
       right: 1em;
-      cursor: pointer;
     }
+  }
+
+  &-content {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.5s ease-in-out;
+
+    &-wrapper {
+      overflow: hidden;
+    }
+
+    &-hidden {
+      grid-template-rows: 0fr;
+    }
+
+    &-section {
+      @include mixins.flex-centered;
+      gap: 1em;
+      padding: 1em;
+    }
+
+    &-img {
+      height: 5em;
+    }
+  }
+
+  &-separator {
+    height: 0.5em;
   }
 }
