@@ -1,0 +1,15 @@
+@use "common/animations";
+@use "common/colors";
+
+.subtitle {
+  font-family: "JetBrains Mono", monospace;
+
+  &-prompt {
+    font-weight: bold;
+    color: colors.$color-prompt;
+  }
+
+  &-cursor {
+    animation: animations.$blink;
+  }
+}

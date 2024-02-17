@@ -1,0 +1,27 @@
+@use "common/colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  color: colors.$color-primary;
+  background-color: colors.$color-background;
+}
+
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: colors.$color-link;
+
+  &:hover {
+    color: colors.$color-link-hover;
+  }
+}

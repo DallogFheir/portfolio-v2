@@ -1,0 +1,9 @@
+@use "common/mixins";
+
+header {
+  @include mixins.flex-centered;
+}
+
+main {
+  height: 100%;
+}
