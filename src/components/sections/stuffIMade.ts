@@ -3,6 +3,7 @@ import BeginnerProjectsBot from "./assets/beginner-projects-bot.png";
 import CluedoSolver from "./assets/cluedo-solver.png";
 import MultilingualKeyboard from "./assets/multilingual-keyboard.png";
 import PlatynowyBog from "./assets/platynowy-bog.png";
+import Pseudokoder from "./assets/pseudokoder.png";
 
 export default [
   {
@@ -19,6 +20,11 @@ export default [
     title: "Multilingual Keyboard",
     url: "https://github.com/DallogFheir/multilingual-keyboard",
     imgSrc: MultilingualKeyboard,
+  },
+  {
+    title: "Pseudokoder",
+    url: "https://adam-broszkiewicz.pl/pseudokoder",
+    imgSrc: Pseudokoder,
   },
   {
     title: "Beginner Projects Bot",
