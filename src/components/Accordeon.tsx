@@ -6,17 +6,30 @@ function Accordeon({
   title,
   isOpen,
   dispatchToggleOpen,
+  isMobile,
   addSeparator = true,
   children,
 }: AccordeonProps) {
   return (
     <section className="accordeon">
       <header className="accordeon-header" onClick={dispatchToggleOpen}>
-        <h2>{title}</h2>
+        <h2 className="accordeon-header-title">{title}</h2>
         {isOpen ? (
-          <ChevronUp className="accordeon-header-chevron" />
+          <ChevronUp
+            className={
+              isMobile
+                ? "accordeon-header-chevron-mobile"
+                : "accordeon-header-chevron"
+            }
+          />
         ) : (
-          <ChevronDown className="accordeon-header-chevron" />
+          <ChevronDown
+            className={
+              isMobile
+                ? "accordeon-header-chevron-mobile"
+                : "accordeon-header-chevron"
+            }
+          />
         )}
       </header>
       <div

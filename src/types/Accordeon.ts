@@ -4,5 +4,6 @@ export interface AccordeonProps extends PropsWithChildren {
   title: string;
   isOpen: boolean;
   dispatchToggleOpen: () => void;
-  addSeparator?: boolean;
+  isMobile: boolean;
+  addSeparator: boolean;
 }

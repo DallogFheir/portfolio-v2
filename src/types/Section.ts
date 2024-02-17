@@ -10,4 +10,5 @@ export interface SectionContent {
 export interface SectionProps extends PropsWithChildren {
   slug: string;
   content: SectionContent[];
+  isMobile: boolean;
 }

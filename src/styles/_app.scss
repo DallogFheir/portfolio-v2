@@ -4,7 +4,15 @@
   @include mixins.flex-column;
   @include mixins.flex-centered;
   font-size: 2.5rem;
-  flex-grow: 3;
+  flex-grow: 2;
+
+  @media (max-width: 768px) {
+    flex-grow: 1;
+  }
+
+  &-title {
+    text-align: center;
+  }
 }
 
 main {

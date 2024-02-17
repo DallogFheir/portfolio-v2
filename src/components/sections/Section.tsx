@@ -1,10 +1,14 @@
 import type { SectionProps } from "../../types/Section";
-import { makeSlug } from "../../utils/utils";
+import { makeClassString, makeSlug } from "../../utils/utils";
 import Image from "../Image";
 
-function Section({ slug, content }: SectionProps) {
+function Section({ slug, content, isMobile }: SectionProps) {
   return (
-    <div className="accordeon-content-section">
+    <div
+      className={makeClassString(
+        "accordeon-content-section",
+        isMobile && "accordeon-content-section-mobile"
+      )}>
       {content.map(({ title, imgSrc, url, extraImgClasses }) => (
         <Image
           key={`${slug}--${makeSlug(title)}`}

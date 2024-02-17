@@ -16,7 +16,7 @@ function Image({ imgSrc, title, url, extraImgClasses = [] }: ImageProps) {
     return <Link href={url}>{img}</Link>;
   }
 
-  return img;
+  return <div>{img}</div>;
 }
 
 export default Image;
