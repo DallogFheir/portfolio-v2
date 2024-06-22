@@ -5,6 +5,7 @@
   @include mixins.flex-centered;
   font-size: 2.5rem;
   flex-grow: 2;
+  margin-top: 1em;
 
   @media (max-width: 768px) {
     flex-grow: 1;
