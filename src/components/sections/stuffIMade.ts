@@ -9,7 +9,7 @@ import Pseudokoder from "./assets/stuff/pseudokoder.png";
 export default [
   {
     title: "Platynowy Bóg",
-    url: "https://platynowy-bog.com.pl",
+    url: "https://adam-broszkiewicz.pl/platynowy-bog",
     imgSrc: PlatynowyBog,
   },
   {
