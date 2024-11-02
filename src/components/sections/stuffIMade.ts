@@ -1,5 +1,4 @@
 import type { SectionContent } from "../../types/Section";
-import AnkiDuplicards from "./assets/stuff/anki-duplicards.png";
 import BeginnerProjectsBot from "./assets/stuff/beginner-projects-bot.png";
 import CluedoSolver from "./assets/stuff/cluedo-solver.png";
 import MultilingualKeyboard from "./assets/stuff/multilingual-keyboard.png";
@@ -31,10 +30,5 @@ export default [
     title: "Beginner Projects Bot",
     url: "https://www.reddit.com/user/BeginnerProjectsBot",
     imgSrc: BeginnerProjectsBot,
-  },
-  {
-    title: "Anki Duplicards",
-    url: "https://ankiweb.net/shared/info/1333083808",
-    imgSrc: AnkiDuplicards,
   },
 ] satisfies SectionContent[];
